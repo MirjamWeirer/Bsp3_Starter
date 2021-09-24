@@ -16,3 +16,19 @@ const responseMessage = {
         { "Color": "Blue", "Text": "Eight", "Value": 8, "Score": 8 } 
     ], 
     "Score": 63 };
+
+    class Card {
+        constructor (color, value, text) {
+            this.Color = color;
+            this.Value = value;
+        }
+    }
+       
+
+    const color = prompt("Welcher Farbe (Red/Green/Blue/Yellow)?");
+    const value = prompt("Welche Zahl 0-9?");
+    const cards = responseMessage.Cards
+        .filter(item=>item.Color == color && item.Value == value)
+        .map(item=>`${item.Color} ${item.Value}`);
+    console.log(cards);
+
