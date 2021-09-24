@@ -17,14 +17,6 @@ const responseMessage = {
     ], 
     "Score": 63 };
 
-    class Card {
-        constructor (color, value, text) {
-            this.Color = color;
-            this.Value = value;
-        }
-    }
-       
-
     const color = prompt("Welcher Farbe (Red/Green/Blue/Yellow)?");
     const value = prompt("Welche Zahl 0-9?");
     const cards = responseMessage.Cards
